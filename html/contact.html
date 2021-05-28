@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Do you have any questions or issues regarding our blog site? Fill in the information and we will contact you shortly.">
+    <meta name="keywords" content="Bar, Home, Cocktails, Guests, Romantic, Tasteful, Easy">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/944d42a4bf.js" crossorigin="anonymous"></script>
+    <title>HomeBar | Contact</title>
+</head>
+
+<body>
+    <nav>
+        <a href="../index.html" class="logo-link"><img src="/img/Homebar-logo.png" alt="logo of the website"
+                class="nav-logo"></a>
+
+        <label for="hamburger">
+            <div class="hamburger-menu">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
+        </label>
+        <input type="checkbox" id="hamburger">
+
+        <ul class="nav-menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="/html/recipe.html">Recipes</a></li>
+            <li><a href="/html/equipment.html">Equipment</a></li>
+            <li><a href="/html/contact.html" class="on-page">Contact</a></li>
+            <li><a href="/html/about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main class="contact-main">
+        <div class="contact-container">
+            <form action="" method="GET" class="contact-form">
+                <h1>Contact Us</h1>
+                <div>
+                    <label for="name">Your Name
+                        <input type="text" name="name" id="name" placeholder="Full Name (Min. 6 characters)">
+                    </label>
+                    <p class="error-message" id="name-error">Please enter your name (At least 6 characters)</p>
+                </div>
+
+                <div>
+                    <label for="email">Email
+                        <input type="text" name="email" id="email" placeholder="test@test.com">
+                    </label>
+                    <p class="error-message" id="email-error">Please enter a valid Email Address</p>
+                </div>
+
+                <div>
+                    <label for="subject">Subject
+                        <input type="text" name="subject" id="subject" placeholder="Your reason (Min. 16 characters)">
+                    </label>
+                    <p class="error-message" id="subject-error">Please enter a subject (At least 16 characters)</p>
+                </div>
+
+                <div class="last-div">
+                    <label for="message">Your Message
+                        <textarea name="message" id="message" cols="30" rows="10"
+                            placeholder="Enter Text Here... (Min. 26 characters)"></textarea>
+                    </label>
+                    <p class="error-message" id="message-error">Message needs to be at least 26 characters</p>
+                </div>
+
+                <button class="submit-btn">SEND</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-container">
+            <p>Follow Us:</p>
+            <ul>
+                <li><a href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook fa-2x"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+            </ul>
+        </div>
+        <div class="copy-container">
+            <p>©</p>
+            <p>Copyright 2021</p>
+        </div>
+    </footer>
+    <script src="../js/hamburger.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+
+</html>
