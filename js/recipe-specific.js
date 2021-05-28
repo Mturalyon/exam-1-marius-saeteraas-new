@@ -12,15 +12,12 @@ async function callApi() {
     try {
         const response = await fetch(url);                                                  //Fetching URL
         const json = await response.json();                                                 //Extract JSON from URL
-        console.log(json);
 
         createHtml(json);                                                                   //Function where HTML is created
 
         //MODAL
         const modalImage = document.querySelector(".modal-container img");
         const modalActivator = document.querySelector(".equipment-info img");
-
-        console.log(modalImage, modalContainer, modalActivator);
 
 
         modalActivator.addEventListener('click', () => {                                    //display flex on modal when img is clicked

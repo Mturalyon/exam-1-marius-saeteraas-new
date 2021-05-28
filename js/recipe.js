@@ -10,7 +10,6 @@ async function callApi() {
         const response = await fetch(url);                                              //catching JSON format through URL
         const json = await response.json();
 
-        console.log(json);
         tequilaContainer.innerHTML = '';                                                //resetting all containers
         vodkaContainer.innerHTML = '';
         rumContainer.innerHTML = '';

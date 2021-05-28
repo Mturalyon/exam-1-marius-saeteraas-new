@@ -9,8 +9,6 @@ async function callApi() {
         const response = await fetch(url);                                              //catching JSON format through URL
         const json = await response.json();
 
-        console.log(json);
-
         displayedContainer.innerHTML = '';
         viewMoreContainer.innerHTML = '';
 

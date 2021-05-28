@@ -8,7 +8,6 @@ async function callApi() {                                                      
     try {
         const response = await fetch(url);                                                  //extracting JSON from the URL
         const json = await response.json();
-        console.log(json);
 
         slider.innerHTML = '';                                                              //resetting containers
         sliderProducts.innerHTML = '';

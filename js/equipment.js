@@ -9,8 +9,6 @@ async function callApis() {                                                     
         const response = await fetch(url);                                      //fetching url
         const json = await response.json();                                     //targeting JSON
 
-        console.log(json);
-
         container.innerHTML = "";                                               //resetting container from loader
 
         for (let i = 0; i < json.length; i++) {                                 //looping through array items and loading them up to the container, and adding id to querystring if clicked

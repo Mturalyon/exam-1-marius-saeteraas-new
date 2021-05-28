@@ -12,7 +12,6 @@ async function callApi() {
     try {
         const response = await fetch(url);                                                  //Fetching URL
         const json = await response.json();                                                 //Extract JSON from URL
-        console.log(json);
 
         createHtml(json);                                                                   //Function where HTML is created
 
