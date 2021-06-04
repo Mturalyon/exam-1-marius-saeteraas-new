@@ -14,16 +14,6 @@ const textError = document.querySelector("#message-error")
 
 const submitButton = document.querySelector(".submit-btn");                 //targeting the SUBMIT button.
 
-submitButton.disabled = true;
-
-function enableButton() {                                                   //enables button ONKEY
-    if (nameInput.value.trim().length > 0 || subjectInput.value.trim().length > 0 || emailInput.value.trim().length > 0 || textArea.value.trim().length > 0) {
-        submitButton.disabled = false;
-    } else {
-        submitButton.disabled = true;
-    };
-};
-
 function formValidation(event) {
     event.preventDefault();                                                 //Prevent Default Behaviour of form
 
@@ -94,5 +84,5 @@ function checkEmail(email) {                                                //ch
     return patternMatches;
 };
 
-addEventListener("keyup", enableButton);
+
 contactForm.addEventListener("submit", formValidation);
